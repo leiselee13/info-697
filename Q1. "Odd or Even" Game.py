@@ -2,14 +2,15 @@
 from microbit import *
 import random
 
+# Game Introduction
 display.scroll("Is the number even?")
 display.scroll("Press A for even, B for odd")
 display.scroll("Touch pin0 to reset")
-
+# Random Interger Selection
 num = int(random.randint(1, 6))
 mod = (num % 2)
 display.show(str(random.randint(1, 6)))
-
+# Main Game Loop
 while True:
     def game():
 
